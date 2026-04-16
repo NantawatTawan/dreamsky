@@ -40,7 +40,9 @@ export default function HeroSection() {
           alt=""
           fill
           priority
-          sizes="100vw"
+          fetchPriority="high"
+          sizes="(max-width: 640px) 640px, (max-width: 1024px) 1024px, 1920px"
+          quality={75}
           className="object-cover"
         />
       </div>
@@ -69,14 +71,7 @@ export default function HeroSection() {
 
         <h1 className="mt-6 font-extrabold text-white leading-[1.05] tracking-tight text-4xl sm:text-5xl md:text-7xl">
           {lines.map((line, i) => (
-            <span
-              key={i}
-              className="block animate-drift-in-up opacity-0"
-              style={{
-                animationDelay: `${200 + i * 300}ms`,
-                animationFillMode: "forwards",
-              }}
-            >
+            <span key={i} className="block">
               {i === 1 ? (
                 <span className="bg-linear-to-r from-orange to-gold bg-clip-text text-transparent">
                   {line}
