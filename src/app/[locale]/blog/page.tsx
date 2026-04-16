@@ -2,6 +2,10 @@ import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 import { getAllPosts } from '@/lib/blog';
 import BlogCard from '@/components/blog/BlogCard';
+import JsonLd from '@/components/seo/JsonLd';
+import { breadcrumbLd, itemListLd } from '@/lib/jsonld';
+import { SITE_URL } from '@/lib/site';
+import { routing } from '@/i18n/routing';
 
 export async function generateMetadata({
   params,
@@ -10,10 +14,21 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: 'metadata' });
+  const url = `${SITE_URL}/${locale}/blog`;
   return {
     title: t('blog_title'),
     description: t('blog_description'),
-    openGraph: { title: t('blog_title'), description: t('blog_description') },
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        routing.locales.map((l) => [l, `${SITE_URL}/${l}/blog`]),
+      ),
+    },
+    openGraph: {
+      title: t('blog_title'),
+      description: t('blog_description'),
+      url,
+    },
   };
 }
 
@@ -24,10 +39,24 @@ export default async function BlogIndexPage({
 }) {
   const { locale } = await params;
   const t = await getTranslations('blog');
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
   const posts = getAllPosts(locale);
+  const blogUrl = `${SITE_URL}/${locale}/blog`;
+
+  const graph = [
+    breadcrumbLd([
+      { name: tNav('home'), url: `${SITE_URL}/${locale}` },
+      { name: tNav('blog'), url: blogUrl },
+    ]),
+    itemListLd(
+      t('title'),
+      posts.map((p) => ({ name: p.title, url: `${blogUrl}/${p.slug}` })),
+    ),
+  ];
 
   return (
     <main className="min-h-screen px-6 py-16 max-w-6xl mx-auto">
+      <JsonLd data={graph} />
       <header className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-navy">{t('title')}</h1>
         <p className="mt-3 text-dark/70">{t('subtitle')}</p>

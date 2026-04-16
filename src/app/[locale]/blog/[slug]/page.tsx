@@ -6,6 +6,10 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { Mountain } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import { getAllPosts, getPostBySlug } from '@/lib/blog';
+import JsonLd from '@/components/seo/JsonLd';
+import { articleLd, breadcrumbLd } from '@/lib/jsonld';
+import { SITE_URL } from '@/lib/site';
+import { routing } from '@/i18n/routing';
 
 export async function generateMetadata({
   params,
@@ -15,13 +19,23 @@ export async function generateMetadata({
   const { locale, slug } = await params;
   const post = getPostBySlug(locale, slug);
   if (!post) return {};
+  const url = `${SITE_URL}/${locale}/blog/${slug}`;
   return {
     title: post.title,
     description: post.description,
+    alternates: {
+      canonical: url,
+      languages: Object.fromEntries(
+        routing.locales.map((l) => [l, `${SITE_URL}/${l}/blog/${slug}`]),
+      ),
+    },
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
+      url,
+      publishedTime: post.date,
+      tags: post.tags,
       images: post.image ? [{ url: post.image }] : undefined,
     },
     twitter: {
@@ -50,14 +64,35 @@ export default async function BlogPostPage({
   if (!post) notFound();
 
   const t = await getTranslations('blog');
+  const tNav = await getTranslations({ locale, namespace: 'nav' });
   const date = new Date(post.date).toLocaleDateString(locale, {
     year: 'numeric',
     month: 'long',
     day: 'numeric',
   });
+  const postUrl = `${SITE_URL}/${locale}/blog/${slug}`;
+
+  const graph = [
+    breadcrumbLd([
+      { name: tNav('home'), url: `${SITE_URL}/${locale}` },
+      { name: tNav('blog'), url: `${SITE_URL}/${locale}/blog` },
+      { name: post.title, url: postUrl },
+    ]),
+    articleLd({
+      title: post.title,
+      description: post.description,
+      url: postUrl,
+      image: post.image,
+      datePublished: post.date,
+      author: post.author,
+      locale,
+      tags: post.tags,
+    }),
+  ];
 
   return (
     <main className="min-h-screen">
+      <JsonLd data={graph} />
       <div className="relative w-full aspect-video max-h-96 bg-sky-light/40 flex items-center justify-center text-navy/60 overflow-hidden">
         {post.image ? (
           <Image

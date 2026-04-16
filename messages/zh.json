@@ -1,11 +1,29 @@
 {
   "metadata": {
-    "title": "Dream Sky Paramotor CNX — 清迈动力滑翔伞体验",
-    "description": "在清迈上空乘动力滑翔伞 — 360° 俯瞰山脉、稻田与云海。无需飞行经验,人人可飞。",
-    "packages_title": "飞行套餐",
-    "packages_description": "清迈动力滑翔伞套餐 — 双人体验飞行、飞行课程与惊喜套餐,全程由专业飞行员陪同。",
-    "blog_title": "博客",
-    "blog_description": "来自 Dream Sky 团队的动力滑翔伞与清迈相关文章、攻略与故事。"
+    "title": "清迈动力伞双人飞行 | Dream Sky Paramotor CNX",
+    "description": "清迈动力伞双人飞行体验,专业飞行员带飞,360° 俯瞰素贴山、稻田与云海。无需飞行经验,微信 / LINE 一键预订,留下难忘的泰国回忆。",
+    "packages_title": "清迈动力伞飞行套餐与价格",
+    "packages_description": "清迈动力伞套餐 — 15–20 分钟双人体验、飞行课程、生日 / 求婚惊喜套餐,专业飞行员带飞,GoPro 4K 可加购,泰国清迈最佳空中体验。",
+    "blog_title": "清迈动力伞博客与攻略",
+    "blog_description": "清迈动力伞攻略 — 最佳飞行季节、新手必读贴士、真实飞行故事。Dream Sky 团队带您了解泰国空中体验。",
+    "keywords": [
+      "清迈动力伞",
+      "清迈动力滑翔伞",
+      "清迈滑翔伞",
+      "清迈飞行体验",
+      "清迈旅游项目",
+      "清迈极限运动",
+      "泰国动力伞",
+      "素贴山飞行",
+      "清迈双人飞行",
+      "Dream Sky Paramotor CNX",
+      "dreamskycnx"
+    ]
+  },
+  "notFound": {
+    "title": "页面已飘离天空",
+    "description": "链接可能已过期或输入有误。请返回首页重新开始。",
+    "back": "返回首页"
   },
   "nav": {
     "home": "首页",

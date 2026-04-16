@@ -1,0 +1,22 @@
+{
+  "name": "Dream Sky Paramotor CNX",
+  "short_name": "Dream Sky CNX",
+  "description": "Paramotor flights over Chiang Mai — tandem, courses, and surprise packages.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1B3A5C",
+  "icons": [
+    {
+      "src": "/icon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "/apple-icon.jpg",
+      "sizes": "180x180",
+      "type": "image/jpeg"
+    }
+  ]
+}
