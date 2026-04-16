@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "title": "Dream Sky Paramotor CNX — 清迈动力滑翔伞体验",
+    "description": "在清迈上空乘动力滑翔伞 — 360° 俯瞰山脉、稻田与云海。无需飞行经验,人人可飞。",
+    "pricing_title": "飞行套餐",
+    "pricing_description": "清迈动力滑翔伞套餐 — 体验飞行、日出之旅与情侣套餐,全程由专业飞行员陪同。",
+    "blog_title": "博客",
+    "blog_description": "来自 Dream Sky 团队的动力滑翔伞与清迈相关文章、攻略与故事。"
+  },
+  "nav": {
+    "home": "首页",
+    "pricing": "套餐",
+    "blog": "博客",
+    "book_now": "立即预订"
+  },
+  "footer": {
+    "description": "清迈动力伞飞行体验 — 从高空感受群山之美。",
+    "links": "链接",
+    "contact": "联系我们",
+    "flying_hours": "飞行时间",
+    "morning": "上午 06:30-09:00",
+    "evening": "下午 16:00-17:30",
+    "rights": "版权所有"
+  },
+  "hero": {
+    "tagline_line1": "翱翔清迈之上",
+    "tagline_line2": "触碰天空",
+    "tagline_line3": "留下永恒记忆",
+    "subtitle": "清迈动力伞之旅 — 山峦、稻田与云雾,360° 尽收眼底。",
+    "note": "无需经验,人人都能飞!",
+    "cta_book": "立即预订",
+    "cta_try": "查看流程",
+    "scroll_hint": "向下滚动起飞"
+  },
+  "why": {
+    "title": "为什么选择清迈动力伞?",
+    "subtitle": "每一个高度,都打开地面看不到的视角。",
+    "items": [
+      { "icon": "🏔️", "altitude": "500m", "title": "层层山峦", "description": "素贴山、龙山与整个清迈山脉尽收眼底。" },
+      { "icon": "🌾", "altitude": "300m", "title": "碧绿稻田", "description": "只有从空中才能看见的稻田图案。" },
+      { "icon": "🌅", "altitude": "700m", "title": "日出日落", "description": "金色阳光穿云而过,浪漫无比。" },
+      { "icon": "☁️", "altitude": "1000m", "title": "季节性云海", "description": "漂浮在云海之上,独一无二的体验。" },
+      { "icon": "🧭", "altitude": "600m", "title": "360° 开阔视野", "description": "没有墙壁,没有玻璃,只有你与天空。" }
+    ]
+  },
+  "services": {
+    "title": "您的飞行菜单",
+    "subtitle": "选择最适合您的体验。",
+    "items": [
+      { "icon": "🪂", "name": "双人飞行", "description": "与专业飞行员同飞,安全又有趣,无需培训。", "badge": "POPULAR" },
+      { "icon": "🎓", "name": "飞行课程", "description": "从基础学起,直到独立飞行。", "badge": "COURSE" },
+      { "icon": "📷", "name": "GoPro 拍摄", "description": "4K 照片和视频,记录每一刻。", "badge": "ADD-ON" },
+      { "icon": "🎁", "name": "惊喜套餐", "description": "送给心爱的人一次云端之旅。", "badge": "GIFT" }
+    ]
+  },
+  "highlights": {
+    "title": "为什么选择我们",
+    "subtitle": "我们的驾驶舱,全程照看您。",
+    "items": [
+      { "label": "本地团队", "description": "熟悉清迈每一个季节的天空。" },
+      { "label": "认证装备", "description": "机翼和引擎符合国际标准,每日检查。" },
+      { "label": "绝美位置", "description": "起飞点距离古城仅数分钟。" },
+      { "label": "热情服务", "description": "每一次都是真正的兰纳式欢迎。" }
+    ]
+  },
+  "experience": {
+    "title": "在空中的感觉",
+    "image_caption": "飞行照片",
+    "items": [
+      "绝对自由 — 仿佛漂浮于天空之上。",
+      "素贴山与环绕清迈的群山。",
+      "刺激与宁静,在同一呼吸间。"
+    ]
+  },
+  "steps": {
+    "title": "您的飞行路线",
+    "subtitle": "从预订到着陆的 5 个步骤。",
+    "items": [
+      { "number": "01", "title": "提前预订", "description": "选择您的日期和时段。" },
+      { "number": "02", "title": "到达现场", "description": "在起飞地点与团队会合。" },
+      { "number": "03", "title": "安全讲解", "description": "学习起跑姿势和手势信号。" },
+      { "number": "04", "title": "起飞", "description": "与专业飞行员飞行 15–30 分钟。" },
+      { "number": "05", "title": "收获回忆", "description": "照片和视频当天送达。" }
+    ]
+  },
+  "reviews": {
+    "title": "来自天空的明信片",
+    "subtitle": "最新乘客的真实反馈。",
+    "items": [
+      { "quote": "从这个角度看清迈,是我一生最美的风景!", "name": "Prae", "location": "曼谷" },
+      { "quote": "一开始害怕,飞上天就爱上了。", "name": "Tum", "location": "清迈" },
+      { "quote": "团队照顾得非常周到,真正的专业。", "name": "Emma", "location": "英国" }
+    ]
+  },
+  "blog": {
+    "title": "文章",
+    "subtitle": "关于动力伞与清迈的故事",
+    "read_more": "阅读更多",
+    "back_to_list": "返回文章列表",
+    "by": "作者",
+    "no_posts": "暂无文章"
+  },
+  "cta": {
+    "title": "来清迈,别错过这次体验!",
+    "subtitle": "让一次普通旅行,成为永生难忘的记忆。",
+    "book": "立即预订",
+    "chat": "立即聊天",
+    "call": "电话咨询"
+  },
+  "pricing": {
+    "title": "飞行套餐",
+    "subtitle": "选择最适合您的飞行体验 — 所有套餐均由专业飞行员带飞。",
+    "popular": "最受欢迎",
+    "first_class": "FIRST CLASS",
+    "per_person": "฿ / 人",
+    "per_couple": "฿ / 2人",
+    "book_now": "立即预订",
+    "packages": {
+      "trial": {
+        "name": "体验飞行",
+        "desc": "适合第一次想尝试飞行的新手。"
+      },
+      "sunrise": {
+        "name": "日出套餐",
+        "desc": "清迈招牌体验 — 飞越清晨的云雾。"
+      },
+      "couple": {
+        "name": "情侣套餐",
+        "desc": "与心爱的人一起飞越云端的浪漫时刻。"
+      }
+    },
+    "features": {
+      "duration_trial": "飞行 15-20 分钟",
+      "sunrise_view": "素贴山日出美景",
+      "two_people": "两位乘客(分别飞行)",
+      "gopro": "GoPro 4K 视频拍摄",
+      "safety": "全套安全装备",
+      "insurance": "飞行保险",
+      "transfer": "市区接送服务"
+    },
+    "includes_title": "所有套餐包含",
+    "includes_subtitle": "无隐藏费用 — 一价全包。",
+    "includes_items": [
+      "GoPro 4K 视频拍摄",
+      "全套安全装备",
+      "飞行保险",
+      "飞行前安全讲解",
+      "专业飞行员"
+    ],
+    "conditions_title": "预订条款",
+    "conditions_items": [
+      "请提前 1-3 天预订以确认档期",
+      "定金不退,但可改期",
+      "飞行时间:上午 06:30-09:00 / 下午 16:00-17:30",
+      "乘客体重限制:XX 公斤以下",
+      "飞行视天气状况而定"
+    ],
+    "cta_title": "选好套餐了吗?快来联系我们!",
+    "cta_subtitle": "我们的团队随时回答您的问题,帮您选出合适的飞行套餐。"
+  }
+}

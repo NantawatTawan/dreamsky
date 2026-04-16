@@ -1,26 +1,114 @@
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-navy: #1B3A5C;
+  --color-orange: #E8872B;
+  --color-gold: #F5B731;
+  --color-sky-light: #87CEEB;
+  --color-dark: #1A1A2E;
+  --color-light: #F8F9FA;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans-th: "Prompt", "Sarabun", sans-serif;
+  --font-sans-en: "Inter", "Poppins", sans-serif;
+  --font-sans-zh: "Noto Sans SC", sans-serif;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-sans-th);
+}
+
+@keyframes driftInUp {
+  from { opacity: 0; transform: translateY(30px) translateX(-10px); }
+  to   { opacity: 1; transform: translateY(0) translateX(0); }
+}
+@keyframes driftInLeft {
+  from { opacity: 0; transform: translateX(-40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes driftInRight {
+  from { opacity: 0; transform: translateX(40px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-6px); }
+}
+@keyframes sway {
+  0%, 100% { transform: translateX(0) rotate(0deg); }
+  50%      { transform: translateX(2px) rotate(0.3deg); }
+}
+
+.animate-drift-in-up {
+  animation: driftInUp 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.animate-drift-in-left {
+  animation: driftInLeft 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.animate-drift-in-right {
+  animation: driftInRight 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+.animate-sway {
+  animation: sway 6s ease-in-out infinite;
+}
+
+@keyframes bounceDown {
+  0%, 100% { transform: translateY(0); opacity: 0.7; }
+  50%      { transform: translateY(8px); opacity: 1; }
+}
+@keyframes pulseGlow {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(232, 135, 43, 0.55); }
+  50%      { box-shadow: 0 0 0 14px rgba(232, 135, 43, 0); }
+}
+@keyframes drawPath {
+  to { stroke-dashoffset: 0; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.animate-bounce-down { animation: bounceDown 2s ease-in-out infinite; }
+.animate-pulse-glow  { animation: pulseGlow 2.2s ease-out infinite; }
+.animate-shimmer     {
+  background: linear-gradient(90deg, transparent, rgba(245,183,49,0.35), transparent);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+
+.hover-float { transition: transform 0.4s cubic-bezier(0.25,0.46,0.45,0.94), box-shadow 0.4s; }
+.hover-float:hover { transform: translateY(-8px); }
+
+.perforated-edge {
+  background-image: radial-gradient(circle at 6px 50%, transparent 3px, currentColor 3.5px);
+  background-size: 14px 1px;
+  background-repeat: repeat-x;
+  background-position: 0 50%;
+  height: 1px;
+}
+
+.bg-sunset {
+  background: linear-gradient(180deg, #1B3A5C 0%, #3a4a7a 35%, #E8872B 75%, #F5B731 100%);
+}
+
+.path-draw {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+}
+.path-draw.is-visible {
+  animation: drawPath 2.4s cubic-bezier(0.25,0.46,0.45,0.94) forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }

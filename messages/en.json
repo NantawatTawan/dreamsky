@@ -1,0 +1,161 @@
+{
+  "metadata": {
+    "title": "Dream Sky Paramotor CNX — Paramotor Flights in Chiang Mai",
+    "description": "Tandem paramotor flights over Chiang Mai — mountains, rice fields, and sea of mist from a 360° view above. No experience needed.",
+    "pricing_title": "Packages",
+    "pricing_description": "Paramotor flight packages in Chiang Mai — trial flights, sunrise tours, and couple experiences with professional pilots.",
+    "blog_title": "Blog",
+    "blog_description": "Stories, tips, and guides about paramotor flying and Chiang Mai from the Dream Sky team."
+  },
+  "nav": {
+    "home": "Home",
+    "pricing": "Packages",
+    "blog": "Blog",
+    "book_now": "Book Now"
+  },
+  "footer": {
+    "description": "Paramotor flights over Chiang Mai — feel the mountains from above.",
+    "links": "Links",
+    "contact": "Contact",
+    "flying_hours": "Flying Hours",
+    "morning": "Morning 06:30-09:00",
+    "evening": "Evening 16:00-17:30",
+    "rights": "All rights reserved"
+  },
+  "hero": {
+    "tagline_line1": "Fly over Chiang Mai",
+    "tagline_line2": "Touch the sky",
+    "tagline_line3": "Remember forever",
+    "subtitle": "Paramotor tours in Chiang Mai — mountains, rice fields and mist from a 360° view above.",
+    "note": "No experience needed — anyone can fly!",
+    "cta_book": "Book a Flight",
+    "cta_try": "See How It Works",
+    "scroll_hint": "Scroll to take off"
+  },
+  "why": {
+    "title": "Why paramotor in Chiang Mai?",
+    "subtitle": "Every altitude opens a view the ground can't offer.",
+    "items": [
+      { "icon": "🏔️", "altitude": "500m", "title": "Layered Mountains", "description": "Doi Suthep, Doi Luang and the full Chiang Mai range in one frame." },
+      { "icon": "🌾", "altitude": "300m", "title": "Green Rice Fields", "description": "Patterns of Chiang Mai's paddies only visible from above." },
+      { "icon": "🌅", "altitude": "700m", "title": "Sunrise & Sunset", "description": "Gold light piercing the clouds — impossibly romantic." },
+      { "icon": "☁️", "altitude": "1000m", "title": "Seasonal Sea of Mist", "description": "Float above a sea of clouds — nowhere else feels like this." },
+      { "icon": "🧭", "altitude": "600m", "title": "360° Open View", "description": "No walls, no glass — just you and the sky." }
+    ]
+  },
+  "services": {
+    "title": "Your Flight Menu",
+    "subtitle": "Pick the experience that suits you.",
+    "items": [
+      { "icon": "🪂", "name": "Tandem Flight", "description": "Fly with a pro pilot — safe, fun, no training required.", "badge": "POPULAR" },
+      { "icon": "🎓", "name": "Flight Course", "description": "Learn to fly solo from the basics to real flight.", "badge": "COURSE" },
+      { "icon": "📷", "name": "GoPro Capture", "description": "4K photos and video of every moment in the air.", "badge": "ADD-ON" },
+      { "icon": "🎁", "name": "Surprise Package", "description": "Gift someone special an experience above the clouds.", "badge": "GIFT" }
+    ]
+  },
+  "highlights": {
+    "title": "Why Choose Us",
+    "subtitle": "Our cockpit looks after you on every flight.",
+    "items": [
+      { "label": "Local Team", "description": "We know every season of Chiang Mai's skies." },
+      { "label": "Certified Gear", "description": "Wings and engines checked to international standards." },
+      { "label": "Scenic Location", "description": "Take-off sites minutes from the old town." },
+      { "label": "Warm Service", "description": "A genuine Lanna welcome, every time." }
+    ]
+  },
+  "experience": {
+    "title": "What It Feels Like Up There",
+    "image_caption": "Photo from flight",
+    "items": [
+      "Absolute freedom — like floating on the sky itself.",
+      "Doi Suthep and the mountains ringing the city.",
+      "Thrill and calm, in the exact same breath."
+    ]
+  },
+  "steps": {
+    "title": "Your Flight Path",
+    "subtitle": "Five steps from booking to landing.",
+    "items": [
+      { "number": "01", "title": "Book Ahead", "description": "Choose your date and time slot." },
+      { "number": "02", "title": "Arrive on Site", "description": "Meet the team at the take-off location." },
+      { "number": "03", "title": "Safety Brief", "description": "Learn the run-up stance and hand signals." },
+      { "number": "04", "title": "Take Off", "description": "Fly with a pro pilot for 15–30 minutes." },
+      { "number": "05", "title": "Collect Memories", "description": "Photos and video delivered the same day." }
+    ]
+  },
+  "reviews": {
+    "title": "Postcards from the Sky",
+    "subtitle": "Words from our most recent flyers.",
+    "items": [
+      { "quote": "Chiang Mai from this angle is the best view of my life!", "name": "Prae", "location": "Bangkok" },
+      { "quote": "I was scared at first, then fell in love mid-flight.", "name": "Tum", "location": "Chiang Mai" },
+      { "quote": "The team took such good care of us — true pros.", "name": "Emma", "location": "UK" }
+    ]
+  },
+  "blog": {
+    "title": "Articles",
+    "subtitle": "Stories about paramotor flying and Chiang Mai",
+    "read_more": "Read more",
+    "back_to_list": "Back to all articles",
+    "by": "by",
+    "no_posts": "No posts yet"
+  },
+  "cta": {
+    "title": "In Chiang Mai? Don't miss this one.",
+    "subtitle": "Turn an ordinary trip into a memory you'll carry for life.",
+    "book": "Book Now",
+    "chat": "Chat Now",
+    "call": "Call Us"
+  },
+  "pricing": {
+    "title": "Our Packages",
+    "subtitle": "Pick the flight experience that fits you — every package flies with a pro pilot.",
+    "popular": "Most Popular",
+    "first_class": "FIRST CLASS",
+    "per_person": "฿ / person",
+    "per_couple": "฿ / 2 people",
+    "book_now": "Book Now",
+    "packages": {
+      "trial": {
+        "name": "Trial Flight",
+        "desc": "Perfect for first-timers who want a taste of the sky."
+      },
+      "sunrise": {
+        "name": "Sunrise Package",
+        "desc": "The Chiang Mai signature — soar above the morning mist."
+      },
+      "couple": {
+        "name": "Couple Package",
+        "desc": "A romantic flight for two, far above the clouds."
+      }
+    },
+    "features": {
+      "duration_trial": "15-20 minute flight",
+      "sunrise_view": "Sunrise view over Doi Suthep",
+      "two_people": "Two passengers (separate flights)",
+      "gopro": "GoPro 4K video capture",
+      "safety": "Full safety gear included",
+      "insurance": "Flight insurance",
+      "transfer": "In-town pickup & drop-off"
+    },
+    "includes_title": "Every Package Includes",
+    "includes_subtitle": "No hidden fees — everything ready at one price.",
+    "includes_items": [
+      "GoPro 4K video capture",
+      "Complete safety gear",
+      "Flight insurance",
+      "Pre-flight safety brief",
+      "Professional instructor"
+    ],
+    "conditions_title": "Booking Conditions",
+    "conditions_items": [
+      "Book 1-3 days in advance to secure your slot",
+      "Deposits are non-refundable but dates are reschedulable",
+      "Flight times: 06:30-09:00 AM / 16:00-17:30 PM",
+      "Passenger weight limit: XX kg",
+      "Flights depend on weather conditions"
+    ],
+    "cta_title": "Found your package? Let's talk!",
+    "cta_subtitle": "Our team is ready to answer questions and help you pick the right flight."
+  }
+}
