@@ -1,7 +1,8 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Camera, Mountain } from 'lucide-react';
+import Image from 'next/image';
+import { Camera } from 'lucide-react';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 
 export default function Experience() {
@@ -31,23 +32,21 @@ export default function Experience() {
 
         <ScrollReveal direction="right" delay={150}>
           <div className="relative aspect-[4/5] md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl">
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'linear-gradient(160deg, #87CEEB 0%, #b9e2f3 40%, #F5B731 100%)',
-              }}
+            <Image
+              src="/images/views/S__26935337_0.jpg"
+              alt={t('image_caption')}
+              fill
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-cover"
             />
-            <div className="absolute inset-0 flex items-end justify-start p-6">
-              <div className="inline-flex items-center gap-2 rounded-lg bg-white/70 backdrop-blur px-4 py-2 text-navy font-semibold text-sm ring-1 ring-white">
-                <Camera className="h-4 w-4" /> {t('image_caption')}
-              </div>
-            </div>
             <div
               aria-hidden
-              className="absolute top-6 right-6 animate-float text-navy/80"
-            >
-              <Mountain className="h-14 w-14" />
+              className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent"
+            />
+            <div className="absolute inset-0 flex items-end justify-start p-6">
+              <div className="inline-flex items-center gap-2 rounded-lg bg-white/80 backdrop-blur px-4 py-2 text-navy font-semibold text-sm ring-1 ring-white shadow-md">
+                <Camera className="h-4 w-4" /> {t('image_caption')}
+              </div>
             </div>
           </div>
         </ScrollReveal>

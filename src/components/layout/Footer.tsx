@@ -2,7 +2,12 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Phone, Clock } from "lucide-react";
 import { Link } from "@/i18n/navigation";
-import { LineIcon, WhatsAppIcon } from "@/components/icons/BrandIcons";
+import {
+  LineIcon,
+  WeChatIcon,
+  TikTokIcon,
+  FacebookIcon,
+} from "@/components/icons/BrandIcons";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -41,10 +46,10 @@ export default function Footer() {
             </li>
             <li>
               <Link
-                href="/pricing"
+                href="/packages"
                 className="hover:text-orange transition-colors"
               >
-                {tNav("pricing")}
+                {tNav("packages")}
               </Link>
             </li>
             <li>
@@ -64,32 +69,55 @@ export default function Footer() {
             <li className="flex items-center gap-2">
               <LineIcon className="h-4 w-4 text-white/70" />
               <a
-                href="https://line.me/R/ti/p/@dreamskyparamotor"
+                href="https://line.me/ti/p/9cPa9GRwet"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-orange transition-colors"
               >
-                LINE: @dreamskyparamotor
+                LINE: @dreamskycnx99
               </a>
             </li>
             <li className="flex items-center gap-2">
               <Phone className="h-4 w-4 text-white/70" />
               <a
-                href="tel:+66000000000"
+                href="tel:+66823138099"
                 className="hover:text-orange transition-colors"
               >
-                0XX-XXX-XXXX
+                082-313-8099
               </a>
             </li>
+            {/* TODO: add WhatsApp when customer provides number */}
             <li className="flex items-center gap-2">
-              <WhatsAppIcon className="h-4 w-4 text-white/70" />
+              <WeChatIcon className="h-4 w-4 text-white/70" />
               <a
-                href="https://wa.me/66000000000"
+                href="https://u.wechat.com/kME5YwDWd782XVwRhq4ldYs?s=3"
                 target="_blank"
                 rel="noreferrer"
                 className="hover:text-orange transition-colors"
               >
-                WhatsApp: +66XXXXXXXXX
+                {t("wechat")}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <TikTokIcon className="h-4 w-4 text-white/70" />
+              <a
+                href="https://www.tiktok.com/@dreamskyparamotor"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-orange transition-colors"
+              >
+                {t("tiktok")}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <FacebookIcon className="h-4 w-4 text-white/70" />
+              <a
+                href="https://www.facebook.com/profile.php?id=61573311088766"
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-orange transition-colors"
+              >
+                {t("facebook")}
               </a>
             </li>
             <li className="pt-2 border-t border-white/10 mt-3">

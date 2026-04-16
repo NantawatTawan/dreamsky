@@ -6,8 +6,8 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 
 const ICONS = [Video, Shield, ShieldCheck, ClipboardList, User] as const;
 
-export default function PricingIncludes() {
-  const t = useTranslations('pricing');
+export default function PackagesIncludes() {
+  const t = useTranslations('packages');
   const items = t.raw('includes_items') as string[];
 
   return (

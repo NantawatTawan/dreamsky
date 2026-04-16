@@ -3,15 +3,15 @@
 import { useTranslations } from 'next-intl';
 import { Phone } from 'lucide-react';
 import ScrollReveal from '@/components/shared/ScrollReveal';
-import { LineIcon, WhatsAppIcon } from '@/components/icons/BrandIcons';
+import { LineIcon } from '@/components/icons/BrandIcons';
 
 export default function CTASection() {
   const t = useTranslations('cta');
 
+  // TODO: add WhatsApp when customer provides number
   const ctas = [
-    { label: t('book'), href: 'https://line.me/R/ti/p/@dreamskyparamotor', Icon: LineIcon, primary: true },
-    { label: t('chat'), href: 'https://wa.me/66000000000', Icon: WhatsAppIcon, primary: false },
-    { label: t('call'), href: 'tel:+66000000000', Icon: Phone, primary: false },
+    { label: t('book'), href: 'https://line.me/ti/p/9cPa9GRwet', Icon: LineIcon, primary: true },
+    { label: t('call'), href: 'tel:+66823138099', Icon: Phone, primary: false },
   ];
 
   return (

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Mountain } from 'lucide-react';
 import { Link } from '@/i18n/navigation';
 import type { Post } from '@/lib/blog';
@@ -14,8 +15,18 @@ export default function BlogCard({ post, locale }: { post: Post; locale: string 
       href={`/blog/${post.slug}`}
       className="group block bg-white rounded-xl shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1 overflow-hidden"
     >
-      <div className="aspect-video bg-sky-light/40 flex items-center justify-center text-navy/60">
-        <Mountain className="h-12 w-12" />
+      <div className="relative aspect-video bg-sky-light/40 flex items-center justify-center text-navy/60 overflow-hidden">
+        {post.image ? (
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 768px) 50vw, 100vw"
+            className="object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        ) : (
+          <Mountain className="h-12 w-12" />
+        )}
       </div>
       <div className="p-5">
         <h3 className="text-lg font-semibold text-navy group-hover:text-orange transition-colors line-clamp-2">

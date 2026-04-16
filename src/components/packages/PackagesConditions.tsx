@@ -1,13 +1,13 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Calendar, DollarSign, Clock, Scale, CloudSun, Info } from 'lucide-react';
+import { Calendar, RefreshCcw, Clock, HeartPulse, CloudSun, Info } from 'lucide-react';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 
-const ICONS = [Calendar, DollarSign, Clock, Scale, CloudSun] as const;
+const ICONS = [Calendar, RefreshCcw, Clock, HeartPulse, CloudSun] as const;
 
-export default function PricingConditions() {
-  const t = useTranslations('pricing');
+export default function PackagesConditions() {
+  const t = useTranslations('packages');
   const items = t.raw('conditions_items') as string[];
 
   return (

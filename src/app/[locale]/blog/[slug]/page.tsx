@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
+import Image from 'next/image';
 import { getTranslations } from 'next-intl/server';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import { Mountain } from 'lucide-react';
@@ -57,8 +58,19 @@ export default async function BlogPostPage({
 
   return (
     <main className="min-h-screen">
-      <div className="w-full max-h-96 aspect-video bg-sky-light/40 flex items-center justify-center text-navy/60">
-        <Mountain className="h-24 w-24" />
+      <div className="relative w-full aspect-video max-h-96 bg-sky-light/40 flex items-center justify-center text-navy/60 overflow-hidden">
+        {post.image ? (
+          <Image
+            src={post.image}
+            alt={post.title}
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        ) : (
+          <Mountain className="h-24 w-24" />
+        )}
       </div>
 
       <article className="max-w-3xl mx-auto px-6 py-12">

@@ -8,7 +8,7 @@ import LanguageSwitcher from './LanguageSwitcher';
 
 const navItems = [
   { key: 'home', href: '/' },
-  { key: 'pricing', href: '/pricing' },
+  { key: 'packages', href: '/packages' },
   { key: 'blog', href: '/blog' },
 ] as const;
 
@@ -70,7 +70,7 @@ export default function Header() {
         <div className="hidden md:flex items-center gap-5">
           <LanguageSwitcher />
           <a
-            href="https://line.me/R/ti/p/@dreamskyparamotor"
+            href="https://line.me/ti/p/9cPa9GRwet"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center rounded-full bg-orange px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange/90 hover:shadow-lg hover:-translate-y-0.5 transition"
@@ -128,7 +128,7 @@ export default function Header() {
           <div className="flex items-center justify-between pt-2 border-t border-navy/5">
             <LanguageSwitcher />
             <a
-              href="https://line.me/R/ti/p/@dreamskyparamotor"
+              href="https://line.me/ti/p/9cPa9GRwet"
               target="_blank"
               rel="noreferrer"
               className="inline-flex items-center rounded-full bg-orange px-4 py-2 text-sm font-semibold text-white shadow-sm"

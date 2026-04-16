@@ -5,7 +5,7 @@ import { getAllPosts } from '@/lib/blog';
 const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? 'https://dreamsky-paramotor.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const staticPages = ['', '/pricing', '/blog'] as const;
+  const staticPages = ['', '/packages', '/blog'] as const;
   const entries: MetadataRoute.Sitemap = [];
 
   for (const locale of routing.locales) {
