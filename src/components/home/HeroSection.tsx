@@ -46,7 +46,7 @@ export default function HeroSection() {
       </div>
       <div
         aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-b from-navy/50 via-navy/40 to-navy/80"
+        className="absolute inset-0 -z-10 bg-linear-to-b from-navy/50 via-navy/40 to-navy/80"
       />
       <div
         aria-hidden
@@ -78,7 +78,7 @@ export default function HeroSection() {
               }}
             >
               {i === 1 ? (
-                <span className="bg-gradient-to-r from-orange to-gold bg-clip-text text-transparent">
+                <span className="bg-linear-to-r from-orange to-gold bg-clip-text text-transparent">
                   {line}
                 </span>
               ) : (

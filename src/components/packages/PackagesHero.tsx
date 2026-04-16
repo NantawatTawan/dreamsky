@@ -7,7 +7,7 @@ import ScrollReveal from '@/components/shared/ScrollReveal';
 export default function PackagesHero() {
   const t = useTranslations('packages');
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-navy via-navy/90 to-light pt-28 pb-40 md:pt-36 md:pb-52">
+    <section className="relative overflow-hidden bg-linear-to-b from-navy via-navy/90 to-light pt-28 pb-40 md:pt-36 md:pb-52">
       <div
         aria-hidden
         className="absolute inset-0 opacity-40 pointer-events-none"

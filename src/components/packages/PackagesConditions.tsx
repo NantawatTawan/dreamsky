@@ -26,7 +26,7 @@ export default function PackagesConditions() {
           {items.map((item, i) => (
             <ScrollReveal key={i} delay={i * 60}>
               <div className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-navy/10 hover:border-orange/40 transition">
-                <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-xl bg-orange/10 text-orange">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange/10 text-orange">
                   {(() => {
                     const Icon = ICONS[i];
                     return Icon ? <Icon className="h-5 w-5" /> : <span>•</span>;

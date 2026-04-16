@@ -17,6 +17,12 @@ export default function Header() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [prevPathname, setPrevPathname] = useState(pathname);
+
+  if (pathname !== prevPathname) {
+    setPrevPathname(pathname);
+    setOpen(false);
+  }
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -24,10 +30,6 @@ export default function Header() {
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
   }, []);
-
-  useEffect(() => {
-    setOpen(false);
-  }, [pathname]);
 
   const isActive = (href: string) =>
     href === '/' ? pathname === '/' : pathname.startsWith(href);
@@ -89,17 +91,17 @@ export default function Header() {
           <span className="relative block h-4 w-6">
             <span
               className={`absolute left-0 top-0 block h-0.5 w-full bg-current transition-transform ${
-                open ? 'translate-y-[7px] rotate-45' : ''
+                open ? 'translate-y-1.75 rotate-45' : ''
               }`}
             />
             <span
-              className={`absolute left-0 top-[7px] block h-0.5 w-full bg-current transition-opacity ${
+              className={`absolute left-0 top-1.75 block h-0.5 w-full bg-current transition-opacity ${
                 open ? 'opacity-0' : 'opacity-100'
               }`}
             />
             <span
               className={`absolute left-0 bottom-0 block h-0.5 w-full bg-current transition-transform ${
-                open ? '-translate-y-[7px] -rotate-45' : ''
+                open ? '-translate-y-1.75 -rotate-45' : ''
               }`}
             />
           </span>

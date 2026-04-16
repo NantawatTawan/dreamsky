@@ -38,7 +38,7 @@ export default function PackageCard({
           : 'shadow-xl hover:shadow-2xl ring-1 ring-navy/10',
       ].join(' ')}
     >
-      <div className="relative aspect-[16/9] w-full overflow-hidden">
+      <div className="relative aspect-video w-full overflow-hidden">
         <Image
           src={image}
           alt={imageAlt}
@@ -46,11 +46,11 @@ export default function PackageCard({
           sizes="(min-width: 768px) 33vw, 100vw"
           className="object-cover transition duration-700 group-hover:scale-105"
         />
-        <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-navy/40 via-transparent to-transparent" />
+        <div aria-hidden className="absolute inset-0 bg-linear-to-t from-navy/40 via-transparent to-transparent" />
 
         {popular && (
           <div className="absolute top-4 left-4 z-10">
-            <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-gold via-orange to-gold px-4 py-1.5 text-[10px] font-extrabold tracking-[0.25em] text-navy shadow-lg ring-2 ring-white">
+            <span className="inline-flex items-center gap-1.5 rounded-full bg-linear-to-r from-gold via-orange to-gold px-4 py-1.5 text-[10px] font-extrabold tracking-[0.25em] text-navy shadow-lg ring-2 ring-white">
               <Star className="h-3 w-3 fill-current" /> {popularLabel}
             </span>
           </div>
@@ -60,7 +60,7 @@ export default function PackageCard({
       <div className="flex-1 flex flex-col p-7 md:p-8">
         <div className="flex items-center gap-3">
           {icon && (
-            <div className="flex h-12 w-12 flex-shrink-0 items-center justify-center rounded-2xl bg-navy/5">
+            <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-navy/5">
               {icon}
             </div>
           )}
@@ -76,7 +76,7 @@ export default function PackageCard({
         <ul className="mt-5 space-y-2.5">
           {features.map((f, i) => (
             <li key={i} className="flex items-start gap-3 text-sm md:text-[15px] text-dark/85">
-              <span className="mt-0.5 flex h-5 w-5 flex-shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
+              <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-orange/15 text-orange">
                 <Check className="h-3 w-3" strokeWidth={3} />
               </span>
               <span>{f}</span>
