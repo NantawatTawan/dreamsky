@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
-import { Phone, Clock } from "lucide-react";
+import { Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import {
   LineIcon,
@@ -137,18 +137,6 @@ export default function Footer() {
               >
                 {t("location")}
               </a>
-            </li>
-            <li className="pt-2 border-t border-white/10 mt-3">
-              <div className="flex items-start gap-2">
-                <Clock className="h-4 w-4 mt-0.5 text-white/70" />
-                <div>
-                  <div className="text-white/90 font-medium">
-                    {t("flying_hours")}
-                  </div>
-                  <div className="text-white/60">{t("morning")}</div>
-                  <div className="text-white/60">{t("evening")}</div>
-                </div>
-              </div>
             </li>
           </ul>
         </div>
