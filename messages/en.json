@@ -114,6 +114,12 @@
       { "quote": "The team took such good care of us — true pros.", "name": "Emma", "location": "UK" }
     ]
   },
+  "videos": {
+    "title": "Real moments in the sky",
+    "subtitle": "Unedited clips straight from Chiang Mai paramotor flights.",
+    "clip_1": "Flight clip 1",
+    "clip_2": "Flight clip 2"
+  },
   "gallery": {
     "title": "Moments from the Chiang Mai Sky",
     "subtitle": "Real photos captured by our pilots and passengers.",
