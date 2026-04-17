@@ -8,6 +8,7 @@ import {
   TikTokIcon,
   FacebookIcon,
 } from "@/components/icons/BrandIcons";
+import { CONTACT } from "@/lib/site";
 
 export default function Footer() {
   const t = useTranslations("footer");
@@ -118,6 +119,23 @@ export default function Footer() {
                 className="hover:text-orange transition-colors"
               >
                 {t("facebook")}
+              </a>
+            </li>
+            <li className="flex items-center gap-2">
+              <Image
+                src="/images/google_map.png"
+                alt="Google Maps"
+                width={16}
+                height={16}
+                className="h-4 w-4 object-contain"
+              />
+              <a
+                href={CONTACT.mapUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-orange transition-colors"
+              >
+                {t("location")}
               </a>
             </li>
             <li className="pt-2 border-t border-white/10 mt-3">

@@ -38,6 +38,7 @@
     "wechat": "WeChat",
     "tiktok": "TikTok",
     "facebook": "Facebook",
+    "location": "View on Google Maps",
     "flying_hours": "Flying Hours",
     "morning": "Morning 06:30-09:00",
     "evening": "Evening 16:00-17:30",
@@ -135,7 +136,8 @@
     "subtitle": "Turn an ordinary trip into a memory you'll carry for life.",
     "book": "Book Now",
     "chat": "Chat Now",
-    "call": "Call Us"
+    "call": "Call Us",
+    "locate": "Find Us"
   },
   "packages": {
     "title": "Our Packages",

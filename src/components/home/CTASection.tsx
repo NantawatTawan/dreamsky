@@ -1,9 +1,10 @@
 'use client';
 
 import { useTranslations } from 'next-intl';
-import { Phone } from 'lucide-react';
+import { Phone, MapPin } from 'lucide-react';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 import { LineIcon } from '@/components/icons/BrandIcons';
+import { CONTACT } from '@/lib/site';
 
 export default function CTASection() {
   const t = useTranslations('cta');
@@ -12,6 +13,7 @@ export default function CTASection() {
   const ctas = [
     { label: t('book'), href: 'https://line.me/ti/p/9cPa9GRwet', Icon: LineIcon, primary: true },
     { label: t('call'), href: 'tel:+66823138099', Icon: Phone, primary: false },
+    { label: t('locate'), href: CONTACT.mapUrl, Icon: MapPin, primary: false },
   ];
 
   return (

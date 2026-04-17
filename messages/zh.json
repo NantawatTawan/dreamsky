@@ -38,6 +38,7 @@
     "wechat": "微信",
     "tiktok": "TikTok",
     "facebook": "Facebook",
+    "location": "在 Google 地图查看",
     "flying_hours": "飞行时间",
     "morning": "上午 06:30-09:00",
     "evening": "下午 16:00-17:30",
@@ -135,7 +136,8 @@
     "subtitle": "让一次普通旅行,成为永生难忘的记忆。",
     "book": "立即预订",
     "chat": "立即聊天",
-    "call": "电话咨询"
+    "call": "电话咨询",
+    "locate": "查看位置"
   },
   "packages": {
     "title": "飞行套餐",

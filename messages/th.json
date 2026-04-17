@@ -38,6 +38,7 @@
     "wechat": "WeChat",
     "tiktok": "TikTok",
     "facebook": "Facebook",
+    "location": "ดูแผนที่",
     "flying_hours": "เวลาบิน",
     "morning": "เช้า 06:30-09:00",
     "evening": "เย็น 16:00-17:30",
@@ -135,7 +136,8 @@
     "subtitle": "ให้ทริปธรรมดา กลายเป็นความทรงจำที่ไม่มีวันลืม",
     "book": "จองเลย",
     "chat": "แชททันที",
-    "call": "โทรสอบถาม"
+    "call": "โทรสอบถาม",
+    "locate": "ดูที่ตั้ง"
   },
   "packages": {
     "title": "แพ็คเกจบิน",

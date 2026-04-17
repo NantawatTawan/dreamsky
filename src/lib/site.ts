@@ -12,6 +12,8 @@ export const CONTACT = {
   wechatUrl: 'https://u.wechat.com/kME5YwDWd782XVwRhq4ldYs?s=3',
   tiktokUrl: 'https://www.tiktok.com/@dreamskyparamotor',
   facebookUrl: 'https://www.facebook.com/profile.php?id=61573311088766',
+  // TODO(client): replace with real Google Maps share link for the take-off / meeting point.
+  mapUrl: 'https://www.google.com/maps/search/?api=1&query=Chiang+Mai+Thailand',
 } as const;
 
 // TODO(client): exact street address; falls back to city-level for now.
