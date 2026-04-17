@@ -50,9 +50,8 @@ export async function generateMetadata({
     category: 'travel',
     formatDetection: { email: false, address: false, telephone: false },
     icons: {
-      icon: '/icon.jpg',
-      apple: '/apple-icon.jpg',
-      shortcut: '/favicon.ico',
+      icon: '/icon.png',
+      apple: '/apple-icon.png',
     },
     manifest: '/site.webmanifest',
     openGraph: {

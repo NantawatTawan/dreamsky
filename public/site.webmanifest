@@ -9,14 +9,14 @@
   "theme_color": "#1B3A5C",
   "icons": [
     {
-      "src": "/icon.jpg",
+      "src": "/icon.png",
       "sizes": "512x512",
-      "type": "image/jpeg"
+      "type": "image/png"
     },
     {
-      "src": "/apple-icon.jpg",
+      "src": "/apple-icon.png",
       "sizes": "180x180",
-      "type": "image/jpeg"
+      "type": "image/png"
     }
   ]
 }

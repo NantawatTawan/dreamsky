@@ -26,7 +26,7 @@ export function organizationLd(): JsonLd {
     name: SITE_NAME,
     legalName: SITE_LEGAL_NAME,
     url: SITE_URL,
-    logo: absoluteUrl('/images/logo.jpg'),
+    logo: absoluteUrl('/images/logo-02.png'),
     image: absoluteUrl('/images/og-image.jpg'),
     sameAs,
     contactPoint: [
@@ -64,9 +64,9 @@ export function localBusinessLd(description: string, locale: string): JsonLd {
     telephone: CONTACT.phone,
     image: [
       absoluteUrl('/images/og-image.jpg'),
-      absoluteUrl('/images/logo.jpg'),
+      absoluteUrl('/images/logo-02.png'),
     ],
-    logo: absoluteUrl('/images/logo.jpg'),
+    logo: absoluteUrl('/images/logo-02.png'),
     priceRange: PRICE_RANGE,
     currenciesAccepted: CURRENCY,
     paymentAccepted: 'Cash, Credit Card, Bank Transfer',

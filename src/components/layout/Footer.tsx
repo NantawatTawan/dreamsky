@@ -19,13 +19,13 @@ export default function Footer() {
       <div className="mx-auto max-w-7xl px-4 md:px-8 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
         <div>
           <div className="flex items-center gap-3">
-            <span className="relative h-10 w-10 overflow-hidden rounded-full ring-1 ring-white/20">
+            <span className="relative h-10 w-10">
               <Image
-                src="/images/logo.jpg"
+                src="/images/logo-02.png"
                 alt="Dream Sky Paramotor CNX"
                 fill
                 sizes="40px"
-                className="object-cover"
+                className="object-contain"
               />
             </span>
             <span className="font-bold text-white text-lg">
