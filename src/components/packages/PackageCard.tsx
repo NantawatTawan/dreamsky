@@ -95,7 +95,7 @@ export default function PackageCard({
               : 'border-2 border-navy text-navy hover:bg-navy hover:text-white',
           ].join(' ')}
         >
-          {ctaText} →
+          {ctaText}
         </a>
       </div>
     </div>
