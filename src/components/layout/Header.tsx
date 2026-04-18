@@ -43,7 +43,7 @@ export default function Header() {
       <div className="mx-auto max-w-7xl px-4 md:px-8 h-16 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3 group">
           <span className="relative h-10 w-10">
-            <Image src="/images/logo-03.png" alt="Dream Sky Paramotor CNX" fill sizes="40px" className="object-contain" />
+            <Image src="/images/logo-02.png" alt="Dream Sky Paramotor CNX" fill sizes="40px" className="object-contain" />
           </span>
           <span className="font-bold text-navy text-base md:text-lg leading-tight">
             Dream Sky <span className="text-orange">Paramotor</span> CNX
