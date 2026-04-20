@@ -41,7 +41,7 @@ export default function WhyChiangMai() {
               key={i}
               delay={i * 150}
               direction={i % 2 === 0 ? 'up' : 'right'}
-              className={`md:col-span-2${i === 3 ? ' md:col-start-2' : ''} ${offsets[i % offsets.length]}`}
+              className={`md:col-span-2 ${i === 3 ? 'md:col-start-2' : ''} ${offsets[i % offsets.length]}`}
             >
               <article className="hover-float overflow-hidden rounded-2xl bg-white/90 backdrop-blur shadow-sm ring-1 ring-navy/5 hover:shadow-xl transition">
                 <div className="relative h-40 w-full overflow-hidden bg-sky-light/30">
