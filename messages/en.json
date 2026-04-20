@@ -36,6 +36,8 @@
     "links": "Links",
     "contact": "Contact",
     "wechat": "WeChat",
+    "wechat_qr_title": "Scan WeChat QR Code",
+    "wechat_qr_hint": "Open the WeChat app and scan the QR code to add as a friend",
     "tiktok": "TikTok",
     "facebook": "Facebook",
     "location": "View on Google Maps",

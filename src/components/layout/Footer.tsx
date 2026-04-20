@@ -4,10 +4,10 @@ import { Phone } from "lucide-react";
 import { Link } from "@/i18n/navigation";
 import {
   LineIcon,
-  WeChatIcon,
   TikTokIcon,
   FacebookIcon,
 } from "@/components/icons/BrandIcons";
+import WeChatLink from "@/components/layout/WeChatLink";
 import { CONTACT } from "@/lib/site";
 
 export default function Footer() {
@@ -88,17 +88,7 @@ export default function Footer() {
               </a>
             </li>
             {/* TODO: add WhatsApp when customer provides number */}
-            <li className="flex items-center gap-2">
-              <WeChatIcon className="h-4 w-4 text-white/70" />
-              <a
-                href="https://u.wechat.com/kME5YwDWd782XVwRhq4ldYs?s=3"
-                target="_blank"
-                rel="noreferrer"
-                className="hover:text-orange transition-colors"
-              >
-                {t("wechat")}
-              </a>
-            </li>
+            <WeChatLink />
             <li className="flex items-center gap-2">
               <TikTokIcon className="h-4 w-4 text-white/70" />
               <a

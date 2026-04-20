@@ -36,6 +36,8 @@
     "links": "ลิงก์",
     "contact": "ติดต่อเรา",
     "wechat": "WeChat",
+    "wechat_qr_title": "สแกน WeChat QR Code",
+    "wechat_qr_hint": "เปิดแอป WeChat แล้วสแกน QR โค้ดเพื่อเพิ่มเป็นเพื่อน",
     "tiktok": "TikTok",
     "facebook": "Facebook",
     "location": "ดูแผนที่",
