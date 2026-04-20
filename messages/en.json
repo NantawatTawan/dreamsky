@@ -115,10 +115,16 @@
     ]
   },
   "videos": {
+    "badge": "Live from the sky",
     "title": "Real moments in the sky",
     "subtitle": "Unedited clips straight from Chiang Mai paramotor flights.",
     "clip_1": "Flight clip 1",
-    "clip_2": "Flight clip 2"
+    "clip_2": "Flight clip 2",
+    "clip_3": "Flight clip 3",
+    "clip_4": "Flight clip 4",
+    "clip_5": "Flight clip 5",
+    "swipe_hint": "Swipe to see more →",
+    "back": "Back"
   },
   "gallery": {
     "title": "Moments from the Chiang Mai Sky",

@@ -1,13 +1,19 @@
 'use client';
 
+import Image from 'next/image';
 import { useTranslations } from 'next-intl';
-import { Plane, Star } from 'lucide-react';
+import { Star } from 'lucide-react';
 import ScrollReveal from '@/components/shared/ScrollReveal';
 
 type Item = { quote: string; name: string; location: string };
 
 const rotations = ['-rotate-2', 'rotate-1', '-rotate-1'];
 const shifts = ['md:translate-y-4', 'md:-translate-y-2', 'md:translate-y-6'];
+const backgrounds = [
+  '/images/review_card/1.jpg',
+  '/images/review_card/2.jpg',
+  '/images/review_card/3.jpg',
+];
 
 export default function Reviews() {
   const t = useTranslations('reviews');
@@ -23,47 +29,52 @@ export default function Reviews() {
           <p className="mt-3 text-dark/70 text-base md:text-lg">{t('subtitle')}</p>
         </ScrollReveal>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-6">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
           {items.map((it, i) => (
             <ScrollReveal key={i} delay={i * 160} className={shifts[i % shifts.length]}>
               <article
-                className={`group relative mx-auto max-w-sm rounded-sm bg-white p-6 shadow-xl ring-1 ring-navy/10 ${rotations[i % rotations.length]} transition duration-500 hover:rotate-0 hover:scale-[1.03]`}
-                style={{
-                  backgroundImage:
-                    'repeating-linear-gradient(0deg, transparent, transparent 11px, rgba(27,58,92,0.04) 12px)',
-                }}
+                className={`group relative mx-auto w-full max-w-sm aspect-[4/5] overflow-hidden rounded-sm bg-white p-2 shadow-2xl ring-1 ring-navy/10 ${rotations[i % rotations.length]} transition duration-500 hover:rotate-0 hover:scale-[1.03]`}
               >
-                <div
-                  aria-hidden
-                  className="absolute inset-2 pointer-events-none"
-                  style={{
-                    border: '2px dashed rgba(27,58,92,0.15)',
-                  }}
-                />
-                <div className="relative">
-                  <div className="flex items-center justify-between">
-                    <div className="h-14 w-14 rounded bg-gradient-to-br from-sky-light to-gold ring-2 ring-white shadow flex items-center justify-center text-white">
-                      <Plane className="h-6 w-6" />
-                    </div>
-                    <div className="flex flex-col items-end gap-1">
-                      <span className="rounded border-2 border-dashed border-orange/50 px-2 py-0.5 text-[9px] font-mono text-orange tracking-widest">
-                        CNX · AIRMAIL
-                      </span>
-                      <span className="flex text-gold" aria-label="5 stars">
-                        {Array.from({ length: 5 }).map((_, j) => (
-                          <Star key={j} className="h-3.5 w-3.5 fill-current" />
-                        ))}
-                      </span>
-                    </div>
+                <div className="relative h-full w-full overflow-hidden rounded-[2px]">
+                  <Image
+                    src={backgrounds[i % backgrounds.length]}
+                    alt={`Paramotor flight — ${it.location}`}
+                    fill
+                    sizes="(max-width: 768px) 90vw, 380px"
+                    className="object-cover transition duration-700 group-hover:scale-105"
+                    priority={i === 0}
+                  />
+
+                  <div
+                    aria-hidden
+                    className="absolute inset-0 bg-gradient-to-b from-black/10 via-black/40 to-black/85"
+                  />
+
+                  <div
+                    aria-hidden
+                    className="absolute inset-3 pointer-events-none rounded-sm border border-dashed border-white/30"
+                  />
+
+                  <div className="absolute top-5 left-5 right-5 flex items-start justify-between">
+                    <span className="rounded-sm bg-white/90 px-2.5 py-1 text-[10px] font-mono font-bold text-navy tracking-[0.18em] shadow">
+                      CNX · AIRMAIL
+                    </span>
+                    <span className="flex text-gold drop-shadow-lg" aria-label="5 stars">
+                      {Array.from({ length: 5 }).map((_, j) => (
+                        <Star key={j} className="h-4 w-4 fill-current" />
+                      ))}
+                    </span>
                   </div>
 
-                  <p className="mt-5 text-navy font-semibold text-base md:text-lg leading-relaxed">
-                    &ldquo;{it.quote}&rdquo;
-                  </p>
+                  <div className="absolute inset-x-0 bottom-0 p-6 md:p-7">
+                    <p className="text-white font-semibold text-base md:text-[17px] leading-relaxed drop-shadow-md">
+                      &ldquo;{it.quote}&rdquo;
+                    </p>
 
-                  <div className="mt-6 pt-4 border-t border-dashed border-navy/20">
-                    <p className="font-bold text-navy text-sm">— {it.name}</p>
-                    <p className="text-xs text-dark/60">{it.location}</p>
+                    <div className="mt-4 pt-3 border-t border-dashed border-white/30">
+                      <p className="font-bold text-white text-sm">— {it.name}</p>
+                      <p className="text-xs text-white/75">{it.location}</p>
+                    </div>
                   </div>
                 </div>
               </article>
